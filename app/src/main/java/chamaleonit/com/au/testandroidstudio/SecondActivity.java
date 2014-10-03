@@ -8,6 +8,9 @@ import android.view.MenuItem;
 
 public class SecondActivity extends Activity {
 
+    public final static String EXTRAS_PAYLOAD_KEY
+            = "chamaleonit.com.au.testandroidstudio.EXTRAS_PAYLOAD_KEY";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

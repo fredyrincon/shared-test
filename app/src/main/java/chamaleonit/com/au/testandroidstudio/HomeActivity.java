@@ -9,6 +9,8 @@ import android.view.View;
 
 public class HomeActivity extends Activity {
 
+    public final static String STRING_PAYLOAD = "Started from LaunchActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
