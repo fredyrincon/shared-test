@@ -1,5 +1,7 @@
 package testdirectory;
 
+import android.test.InstrumentationTestCase;
+
 /**
  * Created by SafeCode on 3/10/2014.
  */
