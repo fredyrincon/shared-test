@@ -10,6 +10,10 @@ android {
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
+        testPackageName "chamaleonit.com.au.testandroidstudio"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        testHandleProfiling true
+        testFunctionalTest true
     }
     buildTypes {
         release {
@@ -17,8 +21,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    testOptions {
+        resultsDir = "$project.buildDir/foo/results"
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile 'com.google.guava:guava:11.0.2'
 }
